@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block title %}Put Book{% endblock %}
+{% block content %}  
+    <div class="container" style="padding: 10px; min-height: 700px; max-height: 1600px;">
+        <h4>Put Book</h4>
+        <form>
+            <div class="form-group">
+                <label for="formGroupTitleBook">Tên Sách</label>
+                <input type="text" class="form-control" id="formGroupTitleBook" placeholder="Tên Sách">
+            </div>
+            <div class="form-group">
+                <label for="formGroupAuthor">Tác Giả</label>
+                <input type="text" class="form-control" id="formGroupAuthor" placeholder="Tác Giả">
+            </div>
+            <div class="form-group">
+                <label for="formGroupTitleCatalogs">Thể Loại</label>
+                <input type="text" class="form-control" id="formGroupTitleCatalogs" placeholder="Thể Loại Sách">
+            </div>
+            <div class="form-group">
+                <label for="formGroupLanguage">Ngôn Ngữ</label>
+                <input type="text" class="form-control" id="formGroupLanguage" placeholder="Ngôn Ngữ">
+            </div>
+            <div class="form-group">
+                <label for="formGroupNxb">Nhà Xuất Bản</label>
+                <input type="text" class="form-control" id="formGroupNxb" placeholder="Nhà Xuất Bản">
+            </div>
+            <div class="form-group">
+                <label for="formGroupDate">Năm Xuất Bản</label>
+                <input type="text" class="form-control" id="formGroupDate" placeholder="Năm Xuất Bản">
+            </div>
+            <div class="form-group">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlFileImage">Trang Bìa Tài Liệu</label>
+                      <input type="file" class="form-control-file" id="exampleFormControlFileImage">
+                    </div>
+                </form>
+            </div>
+            <div class="form-group">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">File Tài Liệu</label>
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </form>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+{% endblock %}

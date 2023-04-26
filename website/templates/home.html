@@ -1,0 +1,269 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% block content %} 
+    <div class="container" style="padding: 10px; min-height: 700px; max-height: 1600px;">
+      <p>Chọn danh mục mong muốn hoặc nhập tìm kiếm search để tìm tài liệu bạn cần!</p>
+      <div class="content" style="display: flex;">
+        <div class="btn-group-vertical" style="background-color: #6c757d; border-radius: 5px;">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="noi-khoa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="width: 200px">
+              Nội Khoa
+            </button>
+            <div class="dropdown-menu" aria-labelledby="noi-khoa">
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="ngoai-khoa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="width: 200px">
+              Ngoại Khoa
+            </button>
+            <div class="dropdown-menu" aria-labelledby="ngoai-khoa">
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="san-phu-khoa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="width: 200px">
+              Sản Phụ Khoa
+            </button>
+            <div class="dropdown-menu" aria-labelledby="san-phu-khoa">
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="nhi-khoa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="width: 200px">
+              Nhi Khoa
+            </button>
+            <div class="dropdown-menu" aria-labelledby="nhi-khoa">
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="chuyen-khoa-le" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="width: 200px">
+              Chuyên Khoa Lẻ
+            </button>
+            <div class="dropdown-menu" aria-labelledby="chuyen-khoa-le">
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="y-hoc-co-so" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="width: 200px">
+              Y Học Cơ Sở
+            </button>
+            <div class="dropdown-menu" aria-labelledby="y-hoc-co-so">
+              
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="can-lam-sang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="width: 200px">
+              Cận Lâm Sàng
+            </button>
+            <div class="dropdown-menu" aria-labelledby="can-lam-sang">
+              
+            </div>
+          </div>
+          <button type="button" id="dieu-duong" class="btn btn-secondary" href="http://127.0.0.1:5000/dieu-duong"  style="width: 200px">
+            <a href="http://127.0.0.1:5000/dieu-duong" style="color: #fff; text-decoration: none;">Điều Dưỡng</a>
+          </button>
+          <button type="button" id="duoc-hoc" class="btn btn-secondary" href="http://127.0.0.1:5000/duoc-hoc"  style="width: 200px">
+            <a href="http://127.0.0.1:5000/duoc-hoc" style="color: #fff; text-decoration: none;">Dược Học</a>
+          </button>
+          <!-- Example split danger button -->
+        </div>
+        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" style="padding: 0 10px; width: 100%">
+          <h5>Sách Hay</h5>
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab" style="padding: 10px;">
+        <h5>Lượt Tải Nhiều Nhất</h5>
+        <div class="card-deck">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const noiKhoa = [
+        ['Giáo Trình Nội', 'Nội Tổng Quát', 'Nội Hô Hấp', 'Nội Tim Mạch', 'Nội Tiêu Hóa', 
+        'Nội Thận - Tiết Niệu', 'Nội Tiết', 'Nội Cơ Xương Khớp', 'Nội Thần Kinh', 'Dị Ứng Miễn Dịch', 
+        'Hồi Sức - Cấp Cứu - ICU', 'Huyết Học Truyền Máu'], 
+        ['giao-trinh-noi', 'noi-tong-quat', 'noi-ho-hap', 'noi-tim-mach', 'noi-tieu-hoa', 
+        'noi-than-tiet-nieu', 'noi-tiet', 'noi-co-xuong-khop', 'noi-than-kinh', 'di-ung-mien-dich', 
+        'hoi-suc-cap-cuu-icu', 'huyet-hoc-truyen-mau']
+      ];
+      const noiKhoaMenu = document.querySelector('div.dropdown-menu[aria-labelledby="noi-khoa"]');
+      for (let i = 0; i < noiKhoa[0].length; i++) {
+        const a = document.createElement('a'); 
+        a.classList.add('dropdown-item'); 
+        a.href = "http://127.0.0.1:5000/" + noiKhoa[1][i]; 
+        const textNode = document.createTextNode(noiKhoa[0][i]); 
+        a.appendChild(textNode); 
+        noiKhoaMenu.appendChild(a); 
+      }
+
+      const ngoaiKhoa = [
+          ['Giáo Trình Ngoại', 'Ngoại Tổng Quát', 'Ngoại Cấp Cứu', 'Ngoại Tiêu Hóa', 'Ngoại Lồng Ngực', 
+          'Ngoại Mạch Máu', 'Ngoại Tiết Niệu', 'Ngoại Thần Kinh', 'Chấn Thương Chỉnh Hình', 'Bỏng'], 
+          ['giao-trinh-ngoai', 'ngoai-tong-quat', 'ngoai-cap-cuu', 'ngoai-tieu-hoa', 'ngoai-long-nguc', 
+          'ngoai-mach-mau', 'ngoai-tiet-nieu', 'ngoai-than-kinh', 'chan-thuong-chinh-hinh', 'bong']
+        ];
+      const ngoaiKhoaMenu = document.querySelector('div.dropdown-menu[aria-labelledby="ngoai-khoa"]');
+      for (let i = 0; i < ngoaiKhoa[0].length; i++) {
+        const a = document.createElement('a'); 
+        a.classList.add('dropdown-item'); 
+        a.href = "http://127.0.0.1:5000/" + ngoaiKhoa[1][i]; 
+        const textNode = document.createTextNode(ngoaiKhoa[0][i]); 
+        a.appendChild(textNode); 
+        ngoaiKhoaMenu.appendChild(a); 
+      }
+
+      const sanPhuKhoa = [
+        ['Giáo Trình Sản Phụ Khoa', 'Sản Khoa', 'Phụ Khoa'], 
+        ['giao-trinh-san-phu-khoa', 'san-khoa', 'phu-khoa']
+      ];
+      const sanPhuKhoaMenu = document.querySelector('div.dropdown-menu[aria-labelledby="san-phu-khoa"]');
+      for (let i = 0; i < sanPhuKhoa[0].length; i++) {
+        const a = document.createElement('a'); 
+        a.classList.add('dropdown-item'); 
+        a.href = "http://127.0.0.1:5000/" + sanPhuKhoa[1][i]; 
+        const textNode = document.createTextNode(sanPhuKhoa[0][i]); 
+        a.appendChild(textNode); 
+        sanPhuKhoaMenu.appendChild(a); 
+      }
+
+      const nhiKhoa = [
+        ['Giáo Trình Nhi Khoa', 'Nội Nhi', 'Ngoại Nhi'], 
+        ['giao-trinh-nhi-khoa', 'noi-nhi', 'ngoai-nhi']
+      ];
+      const nhiKhoaMenu = document.querySelector('div.dropdown-menu[aria-labelledby="nhi-khoa"]');
+      for (let i = 0; i < nhiKhoa[0].length; i++) {
+        const a = document.createElement('a'); 
+        a.classList.add('dropdown-item'); 
+        a.href = "http://127.0.0.1:5000/" + nhiKhoa[1][i]; 
+        const textNode = document.createTextNode(nhiKhoa[0][i]); 
+        a.appendChild(textNode); 
+        nhiKhoaMenu.appendChild(a); 
+      }
+
+      const chuyenKhoaLe = [
+        ['Nhãn Khoa', 'Da Liễu', 'Tai Mũi Họng', 'Răng Hàm Mặt', 'Truyền Nhiễm', 
+        'Lao', 'Ung Bướu', 'Tâm Thần', 'Huyết Học', 'Lão Khoa', 'Nam Khoa', 'Gây Mê Hồi Sức', 
+        'Phục Hồi Chức Năng', 'Y Học Cổ Truyền', 'Y Tế Công Cộng'], 
+        ['nhan-khoa', 'da-lieu', 'tai-mui-hong', 'rang-ham-mat', 'truyen-nhiem', 
+        'lao', 'ung-buou', 'tam-than', 'huyen-hoc', 'lao-khoa', 'nam-khoa', 'gay-me-hoi-suc', 
+        'phuc-hoi-chuc-nang', 'y-hoc-co-truyen', 'y-te-cong-cong']
+      ];
+      const chuyenKhoaLeMenu = document.querySelector('div.dropdown-menu[aria-labelledby="chuyen-khoa-le"]');
+      for (let i = 0; i < chuyenKhoaLe[0].length; i++) {
+        const a = document.createElement('a'); 
+        a.classList.add('dropdown-item'); 
+        a.href = "http://127.0.0.1:5000/" + chuyenKhoaLe[1][i]; 
+        const textNode = document.createTextNode(chuyenKhoaLe[0][i]); 
+        a.appendChild(textNode); 
+        chuyenKhoaLeMenu.appendChild(a); 
+      }
+
+      const yHocCoSo = [
+        ['Kỹ Năng Lâm Sàng', 'Di Truyền Học', 'Dược lý học', 'Giải Phẫu Bệnh', 'Giải Phẫu Học', 
+        'Hóa Học', 'Hóa Sinh Học', 'Mô Phôi', 'Sinh Học - SHPT', 'Sinh Lý Bệnh - Miễn Dịch', 
+        'Sinh Lý Học', 'Tâm Lý học', 'Toán - Tin - NCKH', 'Tiếng Anh Y Khoa', 'Vật Lý - lý Sinh', 
+        'Vi Sinh - Ký Sinh Trùng', 'Y Tế Công Cộng'], 
+        ['ky-nang-lam-sang', 'di-truyen-hoc', 'duoc-ly-hoc', 'giai-phau-benh', 'giai-phau-hoc',
+        'hoa-hoc', 'hoa-sinh-hoc', 'mo-phoi', 'sinh-hoc-shpt', 'sinh-ly-benh-mien-dich', 
+        'sinh-ly-hoc', 'tam-ly-hoc', 'toan-tin-nckh', 'tieng-anh-y-khoa', 'vat-ly-ly-sinh', 
+        'vi-sinh-ky-sinh-trung', 'y-te-cong-cong']
+      ];
+      const yHocCoSoMenu = document.querySelector('div.dropdown-menu[aria-labelledby="y-hoc-co-so"]');
+      for (let i = 0; i < yHocCoSo[0].length; i++) {
+        const a = document.createElement('a'); 
+        a.classList.add('dropdown-item'); 
+        a.href = "http://127.0.0.1:5000/" + yHocCoSo[1][i]; 
+        const textNode = document.createTextNode(yHocCoSo[0][i]); 
+        a.appendChild(textNode); 
+        yHocCoSoMenu.appendChild(a); 
+      }
+
+      const canLamSang = [
+        ['Chẩn Đoán Hình Ảnh', 'Xét Nghiệm', 'Điện Tâm Đồ', 'Điện Não Đồ'], 
+        ['chan-doan-hinh-anh', 'xet-nghiem', 'dien-tam-do', 'dien-nao-do']
+      ];
+      const canLamSangMenu = document.querySelector('div.dropdown-menu[aria-labelledby="can-lam-sang"]');
+      for (let i = 0; i < canLamSang[0].length; i++) {
+        const a = document.createElement('a'); 
+        a.classList.add('dropdown-item'); 
+        a.href = "http://127.0.0.1:5000/" + canLamSang[1][i]; 
+        const textNode = document.createTextNode(canLamSang[0][i]); 
+        a.appendChild(textNode); 
+        canLamSangMenu.appendChild(a); 
+      }
+    </script>
+{% endblock %}
